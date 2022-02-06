@@ -26,3 +26,28 @@ public class Staff extends Driver {
     public void setStaffID(String staffID) {
         StaffID = staffID;
     }
+
+    // method for check-in staff drivers(input)
+    ArrayList<Staff> List_of_Staff_Drivers = new ArrayList<>();
+
+    @Override
+    public void inputDriver() {
+        super.inputDriver();
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter your staff ID: ");
+        StaffID = sc.next();
+
+        Staff staff = new Staff(VehicleNumber, PhoneNumber, StaffID);
+
+        List_of_Staff_Drivers.add(staff);
+
+        if(List_of_Staff_Drivers.isEmpty()) {
+
+            System.out.println("Sorry, check-in failed.");
+        } else {
+            System.out.println("Staff member is successfully checked In !");
+        }
+    }
+
