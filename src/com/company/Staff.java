@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Staff extends Driver {
 
     // define variables
@@ -10,7 +13,7 @@ public class Staff extends Driver {
     }
 
     // overriding constructor
-    public Staff(String vehicleNumber, int phoneNumber, String staffID) {
+    public Staff(String vehicleNumber, String phoneNumber, String staffID) {
         super(vehicleNumber, phoneNumber);
         StaffID = staffID;
     }
@@ -23,4 +26,3 @@ public class Staff extends Driver {
     public void setStaffID(String staffID) {
         StaffID = staffID;
     }
-}

@@ -1,17 +1,19 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Driver {
 
     // define variables
     public String VehicleNumber;
-    public int PhoneNumber;
+    public String PhoneNumber;
 
     // default constructor
     public Driver() {
     }
 
     // overriding constructor
-    public Driver(String vehicleNumber, int phoneNumber) {
+    public Driver(String vehicleNumber, String phoneNumber) {
         VehicleNumber = vehicleNumber;
         PhoneNumber = phoneNumber;
     }
@@ -25,11 +27,10 @@ public class Driver {
         VehicleNumber = vehicleNumber;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return PhoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         PhoneNumber = phoneNumber;
     }
-}
