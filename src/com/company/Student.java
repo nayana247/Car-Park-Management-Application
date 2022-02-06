@@ -26,3 +26,27 @@ public class Student extends Driver {
     public void setStudentID(String studentID) {
         StudentID = studentID;
     }
+
+    // method for check-in student drivers(input)
+    ArrayList<Student> List_of_Student_Drivers = new ArrayList<>();
+
+    @Override
+    public void inputDriver() {
+        super.inputDriver();
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter your student ID: ");
+        StudentID = sc.next();
+
+        Student student = new Student(VehicleNumber, PhoneNumber, StudentID);
+
+        List_of_Student_Drivers.add(student);
+
+        if(List_of_Student_Drivers.isEmpty()) {
+
+            System.out.println("Sorry, check-in failed.");
+        } else {
+            System.out.println("Student is successfully checked-in!");
+        }
+    }
