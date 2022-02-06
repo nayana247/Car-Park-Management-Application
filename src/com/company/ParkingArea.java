@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class ParkingArea {
 
     // define variables
@@ -53,4 +55,15 @@ public class ParkingArea {
         ParkingArea_Indicator = parkingArea_Indicator;
     }
 
+    // method for find available parking areas
+    public void AvailableParkingAreas(ParkingArea parkingArea) {
+        ArrayList<ParkingArea> List_of_Available_Parking_Areas = new ArrayList<ParkingArea>();
+        if(parkingArea.getParkingArea_Indicator() == "Available") {
+            List_of_Available_Parking_Areas.add(parkingArea);
+        }
+
+        for(int i=0; i<List_of_Available_Parking_Areas.size(); i++) {
+            System.out.println(List_of_Available_Parking_Areas.get(i).getParkingArea_ID() + "\t | \t" + List_of_Available_Parking_Areas.get(i).getEntrance_GPSCoordinates() + "\t | \t" + List_of_Available_Parking_Areas.get(i).getExit_GPSCoordinates() + "\t | \t" + List_of_Available_Parking_Areas.get(i).getParkingArea_Indicator());
+        }
+    }
 }
