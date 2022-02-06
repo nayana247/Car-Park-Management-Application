@@ -50,3 +50,27 @@ public class Student extends Driver {
             System.out.println("Student is successfully checked-in!");
         }
     }
+
+    // method for check-out StudentDriver
+    @Override
+    public void checkoutDriver() {
+        super.checkoutDriver();
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter your vehicle number : ");
+        String vehicle_no = sc.next();
+
+        /*for(int i=0; i < List_of_Student_Drivers.size(); i++) {
+
+            if(vehicle_no == List_of_Student_Drivers.get(i).getVehicleNumber()) {
+                List_of_Student_Drivers.remove(List_of_Student_Drivers.get(i).getVehicleNumber());
+                System.out.println(vehicle_no + " is checked-out");
+            }
+            else {
+                System.out.println("Check-out is failed");
+            }
+        }*/
+
+        System.out.println("Check-out is successful");
+    }
+}
