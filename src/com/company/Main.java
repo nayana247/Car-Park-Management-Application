@@ -122,10 +122,16 @@ public class Main {
         parkingSlot.AvailableParkingSlots(longVehicle_1);
         parkingSlot.AvailableParkingSlots(longVehicle_2);
 
+        /* Rusiru Ilapperuma
+        2019T00354 */
+
         // create Student Driver object
         Driver StudentDriver_1 = new Student();
         StudentDriver_1.inputDriver(); // execute check-in
         StudentDriver_1.checkoutDriver(); // execute check-out
+
+        /* Prabhath Nuwan
+        2019T00385 */
 
         // create Staff Driver object
         Driver StaffDriver_1 = new Staff();
