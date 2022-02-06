@@ -126,3 +126,10 @@ public class Main {
         Driver StudentDriver_1 = new Student();
         StudentDriver_1.inputDriver(); // execute check-in
         StudentDriver_1.checkoutDriver(); // execute check-out
+
+        // create Staff Driver object
+        Driver StaffDriver_1 = new Staff();
+        StaffDriver_1.inputDriver();  // execute check-in
+        StudentDriver_1.checkoutDriver(); // execute check-out
+    }
+}
