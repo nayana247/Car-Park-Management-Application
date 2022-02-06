@@ -49,3 +49,12 @@ public class Driver {
         System.out.println("Enter phone number : ");
         PhoneNumber = sc.next();
     }
+
+    // method for check-out
+    public void checkoutDriver() {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Are you sure, you want to check-out?");
+        String container = sc.next();
+    }
+}
