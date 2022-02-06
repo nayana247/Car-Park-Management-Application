@@ -27,6 +27,9 @@ public class Staff extends Driver {
         StaffID = staffID;
     }
 
+    /* Rusiru Ilapperuma
+    2019T00354 */
+
     // method for check-in staff drivers(input)
     ArrayList<Staff> List_of_Staff_Drivers = new ArrayList<>();
 
@@ -50,6 +53,9 @@ public class Staff extends Driver {
             System.out.println("Staff member is successfully checked In !");
         }
     }
+
+    /* Prabhath Nuwan
+    2019T00385 */
 
     // method for check-out StaffDriver
     @Override
