@@ -34,3 +34,18 @@ public class Driver {
     public void setPhoneNumber(String phoneNumber) {
         PhoneNumber = phoneNumber;
     }
+
+    // method for check-in drivers(input)
+    public void inputDriver() {
+
+        System.out.println();
+        System.out.println("Please Enter Following Details to Check In");
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter your vehicle number : ");
+        VehicleNumber = sc.next();
+
+        System.out.println("Enter phone number : ");
+        PhoneNumber = sc.next();
+    }
