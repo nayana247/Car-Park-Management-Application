@@ -27,6 +27,9 @@ public class Student extends Driver {
         StudentID = studentID;
     }
 
+    /* Rusiru Ilapperuma
+    2019T00354 */
+
     // method for check-in student drivers(input)
     ArrayList<Student> List_of_Student_Drivers = new ArrayList<>();
 
@@ -50,6 +53,9 @@ public class Student extends Driver {
             System.out.println("Student is successfully checked-in!");
         }
     }
+
+    /* Prabhath Nuwan
+    2019T00385 */
 
     // method for check-out StudentDriver
     @Override
