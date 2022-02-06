@@ -35,6 +35,9 @@ public class Driver {
         PhoneNumber = phoneNumber;
     }
 
+    /* Rusiru Ilapperuma
+    2019T00354 */
+
     // method for check-in drivers(input)
     public void inputDriver() {
 
@@ -49,6 +52,9 @@ public class Driver {
         System.out.println("Enter phone number : ");
         PhoneNumber = sc.next();
     }
+
+    /* Prabhath Nuwan
+    2019T00385 */
 
     // method for check-out
     public void checkoutDriver() {
